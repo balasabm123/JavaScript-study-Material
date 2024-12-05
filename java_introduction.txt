@@ -26,7 +26,17 @@ VARIABLE:
                    ->When you declare variable after console it will  "Can't access before intialization".
                    ->You cant redcalre let variable ,it will through error
 
-->const variable : Const can be defined once , it can't be changed.
+->Const variable : Const can be defined once , it can't be changed.
                   ->You cant redcalre constant variable ,it will through error
 
-->slice() : it will delete the perticular mentioned posision like slice(1) 
+->Slice() : it will delete the perticular mentioned posision like slice(1) 
+
+->Sort() : Sort the array , if two or more digit number  then use "sort((a,b)=>a-b)" else use simple sort()
+
+->Reduce() : When you want to merge all array elements use : array.redude((a,c)=>{ return a+c })
+
+->Flat() : when you have nested array and you want make single array that time use flat()
+
+->Map() : You can use map for (+,-,*) operation on each element of array : array.map((value) = value*2)
+
+->Filter() : You can use filter for (>,<,!=,=) operators. then it will filter accordingly : array.filter((value)=>value>=2)
