@@ -1,0 +1,32 @@
+Java script complete course :
+
+
+* Java script uses JIT(Just In Time) COMPILER 
+
+
+https://youtu.be/cpoXLj24BDY
+
+interview : https://youtu.be/uhtmTe26rqo
+
+
+DOM(Document Object Model) : 
+
+
+VARIABLE:
+--------
+
+-> Var variable  : It is function sccoped variable ; if you declare var , then it can be 
+                    accessed inside function.
+                    ->When you declare variable after console log, the output is: "Undefined"
+                    ->Moving the variable declartion to the top of the function called "HOISTING".
+                    ->You can redeclare var and assign new value ; latest value it will take
+
+-> Let  variable : It is a block scooped variable ; A variable only available for perticular block,
+                   like "if", "while"
+                   ->When you declare variable after console it will  "Can't access before intialization".
+                   ->You cant redcalre let variable ,it will through error
+
+->const variable : Const can be defined once , it can't be changed.
+                  ->You cant redcalre constant variable ,it will through error
+
+->slice() : it will delete the perticular mentioned posision like slice(1) 

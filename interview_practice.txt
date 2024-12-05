@@ -1,0 +1,75 @@
+
+Java script interview : https://youtu.be/sJKj8xazlPs?list=PLpl0GEINwjARM0w6q_e3skmIgU4Fri_L1
+<!-- function login($name,$pass){ -->
+function login(Request,$request){
+$name = $request->name;
+$name = $request->pass;
+    $userdat = DB:table('user')->where('name',$name)->where('pass',$pass);
+
+    if(isset($userdat) && !empty($userdat)){
+
+        $dats = array(); 
+        $dats = $array('name'=>'balasab','last_name'=>'muddebihal'); 
+        $json = json_encode($dats); 
+        return $json;
+    }else{
+        return "not matching";
+    }
+
+
+}
+
+in app.
+
+Route::get('url/id',[controller_name::class,'login']);
+
+
+interface preson_detaial{
+
+    public function show_person_details();
+}
+
+
+class info implements preson_detaial{
+    public function show_person_details(){
+
+        echo "May name is balasab";
+    }
+
+}
+
+$new_info = new info();
+
+$new_info->show_person_details;
+
+jsonplaceholder.typicode.com/todos
+
+
+<htm>
+    <head>
+        <style></style>
+    </head>
+
+    <body>
+
+    <h1 class ="" id="">hdfh</h1>
+ 
+    </body>
+</htm>
+
+<script>
+let data = doucumnent.getelementByid(body);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+ 
+

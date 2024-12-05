@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+<body>
+<h1>What is closure ?</h1> 
+<p id="wel">A closure is,  Inner function always has access to variable and parameter of its outer function </p> 
+<script> 
+     function outer(){
+         
+        let count=1;
+        let name='mayur';
+        return function inner(){
+            count++;
+            return count+name;
+        };
+        inner();
+     }
+
+     const counter = outer();
+     console.log(counter());
+     console.log(counter());
+
+const parent =(y)=>{
+    let name_="Mohan";
+    let x=10;
+
+    const child=()=>{
+        console.log(name_+"-"+(x+y));
+    }
+
+    return child;
+}
+const hit = parent(5);
+hit();
+ 
+
+const test = () =>{
+    console.log("get unlimited");
+}
+test();
+
+
+</script>
+</body>
+</html>

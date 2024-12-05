@@ -1,0 +1,89 @@
+Jquery
+
+-> Jquery is a java script library.
+
+*What will do with Jquery
+
+->HTML manupulation
+->CSS manupulation
+->DOM manupulation
+->Effect and animation
+
+
+* Need to include the jquery link:
+
+<head>
+<script src="jquery-3.7.1.min.js"></script>
+</head>
+
+* Syntax 
+
+$(selector).action()
+
+->Selectors are used to manupulate HTML elements
+
+ex: $("p").hide()   -> Hides all p elements
+    $(".test").hide() -> here dot indicates class and "test" is class name
+
+Events : All action on the page 
+--------
+list of events:
+ 1.click,
+ 2.keypres,
+ 3.keydown,
+ 4.keyup,
+ 5.hoover
+ 6.fadeIn,
+ 7.fadeout
+
+const obj = {
+  one: 1,
+  two: 2,
+  three: 3,
+  four: 4,
+  five: 5
+};
+
+Looping statement : 
+-------------------
+$.each(obj, function(key, value) {
+  console.log(value);
+});
+
+
+Example:
+
+ $(document).ready(function(){
+
+    $("button").click(function(){
+        $("p").hide(500);
+    });
+
+ });
+
+/////////////////////////////////////////////////////////////////
+
+AJAX(Asynchronous java script and XML)
+
+$("#submit").on('click',function(event){
+event.preventDefault();
+
+$.ajax({
+    url :       '',
+    type:       'GET/POST',
+    dataType:   'JSON',
+    data :       $(#form_id).serialize(),
+    success:     function(response){
+                $(#id).html(response);
+    }
+    error: function(){
+        console.error('error:',teststatus,errorthrown);
+    }
+});
+
+});
+
+
+
+
+

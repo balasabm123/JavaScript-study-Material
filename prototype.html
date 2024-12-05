@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+<body>
+<h1>How  Prototype works  ?</h1> 
+<p id="wel">Prototype allows to inherit properties  and methods from other object</p> 
+<p id="demo"></p>
+<script> 
+
+function Person(name){
+    this.name = name;
+}
+ 
+Person.prototype.test = function(){
+    return `Hello, ${this.name}`;
+}
+
+const person = new Person("shiva");
+console.log(person.test());
+ 
+</script>
+</body>
+</html>

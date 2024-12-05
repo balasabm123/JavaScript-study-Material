@@ -1,0 +1,9 @@
+
+Cascade style sheet(CSS):
+
+
+Selectors:  Html tags like <p>,<h1>....so on    
+
+Properties: color , margin, top ,botton..so ..on
+
+Value : color:red, margin:10%

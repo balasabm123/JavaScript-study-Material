@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+<body>
+<h1>How  this works  ?</h1> 
+<p id="wel">This keyword refers to OBJECT</p> 
+<p id="demo"></p>
+<script> 
+
+       const person = {
+        fname:"Siva",
+        lname:"Himalaya",
+        fullname: function(){
+            return this.fname+ " "+this.lname;
+        }
+
+       };
+document.getElementById("demo").innerHTML = person.fullname();
+</script>
+</body>
+</html>

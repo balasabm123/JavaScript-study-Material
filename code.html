@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+</head>
+<body>
+
+<h1>Coding test 1</h1>
+</body>
+</html>
+
+
+<script>
+function get_mesage(){
+        throw "Hello word";
+}
+function sayHello(){
+    try{
+        const data = get_mesage();
+        console.log('Working fine',data);
+    }
+    catch(e){
+        console.log('an error found',e);
+    }
+}
+
+
+sayHello()
+
+
+
+
+    console.log(20+30 +'10');
+
+    const number = [1,2,3];
+    number[10]=11;
+    console.log(number);
+
+console.log(typeof typeof 12); // o/p is string
+
+/*     console.log(arr);
+     console.log(name);
+
+     var  arr = [1,2,3];
+     let name="balasab muddebihal";*/
+
+
+   for (var i=0 ; i<4; i++){
+    setTimeout(()=>console.log(i),5)
+    //  console.log(i) 
+   }  
+
+   for (let i=0 ; i<4; i++){
+    setTimeout(()=>console.log(i),5)
+    // console.log(i) 
+   }  
+
+
+   function sum(a,b){
+    return a+b;
+   }
+
+   console.log(sum(10,"10"));
+
+   const obj = {a:"1",b:"2",a:"3",b:"4"};
+   console.log(obj); // when you redclare key with same name , then the latest value only it wil console
+
+for(let i=0; i<8;i++){
+    if(i===6)break;
+    console.log(i);
+}
+
+
+
+
+</script>
