@@ -117,7 +117,7 @@ setTimeout(()=> {
 console.log('3');
 
 // --------------------------------------------
-console.log('Promises : Promises are used to specify Asynchronous operations in js ')
+console.log('Promises : Promises are used to specify Asynchronous operations in js ');
 
 const promise  = new Promise(function(resolve,reject){
 var condition=true;
@@ -132,7 +132,29 @@ promise.then((res)=>{
     console.log(res);
 })  
 console.log(promise);
+
 // --------------------------------------------
+console.log('call(), apply(), bind() '); 
+
+const person = {
+    name:'Mayur',
+    myfunc(country,state){
+        console.log(`My name is ${this.name} , state is ${state}  and country is ${country}`)
+    }
+}
+
+const person2 = {
+    name:'Balasab',
+}
+
+person.myfunc('India','Maharashtra')
+person.myfunc.call(person2,'India','Karnataka'); // call() uses String parameter
+person.myfunc.apply(person2,['India','Karnataka']); // apply() uses array parameter
+
+const bind_res = person.myfunc.bind(person2,'Delhi','Delhi');// call() uses String parameter
+bind_res();
+
+
 
 // document.getElementById("demo").innerHTML = person.fullname();
 </script>

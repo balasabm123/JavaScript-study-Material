@@ -44,3 +44,8 @@ VARIABLE:
 ->Promises : Promises are used to specify Asynchronous operations in Java script ; Pending,Fullfiled,Rejected
              THEN() : This method is used to specify , what to do when promises fulfilled or rejected.
              Example : API responses`   
+
+->call,apply,bind() : When you want to re-use one function of object into another object, use 
+                      Call('2nd object name','pass string'), and 
+                      Apply('2nd object name', ['',''])  accept array
+                      Bind('2nd object name','pass string'), It will return as function,so store in const, then call that const
