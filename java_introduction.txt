@@ -37,6 +37,6 @@ VARIABLE:
 
 ->Flat() : when you have nested array and you want make single array that time use flat()
 
-->Map() : You can use map for (+,-,*) operation on each element of array : array.map((value) = value*2)
-
+->Map() : You can use map for (+,-,*) operation on each element of array : array.map((value) => value*2)
+          -> convert array into loop also
 ->Filter() : You can use filter for (>,<,!=,=) operators. then it will filter accordingly : array.filter((value)=>value>=2)

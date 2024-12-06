@@ -7,7 +7,31 @@
 <h1>Program practice</h1> 
 <p id="wel">JS program practice</p> 
 <p id="demo"></p>
+
+<div id="container"></div>
+
+<button id="button"  onclick="myFunction_show()">Click me</button>
+<button id="button_hd" onclick="myFunction()" >Hide me</button>
 <script> 
+
+const button = document.getElementById("button");
+const container = document.getElementById("container");
+
+button.addEventListener('click',()=>{
+    const el = document.createElement('span');
+    el.innerText = "Mayur Muddebihal";
+    container.appendChild(el);
+})
+
+function myFunction(){
+  const cont = document.getElementById("container");
+  cont.style.display="none";
+}
+function myFunction_show(){
+    const cont = document.getElementById("container");
+    cont.style.display="block";
+}
+
 
 // -------------------------------------------- 
 
@@ -58,6 +82,11 @@ console.log(" use of Filter function 'You can use this for (>,<,=,!=) operation 
 const fltr = [1,2,4,3];
 const fltr2 = fltr.filter((value)=>value >=2 );
 console.log(fltr2);
+console.log("tyryrtyrtyrtyrtyrtyrt");
+let fltrr = [1,2,4,3];
+console.log(typeof fltrr);
+
+
 
 
 
