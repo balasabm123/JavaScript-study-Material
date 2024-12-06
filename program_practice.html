@@ -11,17 +11,36 @@
 <div id="container"></div>
 
 <button id="button"  onclick="myFunction_show()">Click me</button>
+
+
 <button id="button_hd" onclick="myFunction()" >Hide me</button>
+
+
+<p id="namee"></p>
+<button id="btn2">click me 2</button>
+
 <script> 
 
+const btnn = document.getElementById("btn2");
+const namee = document.getElementById("namee");
+
+btnn.addEventListener('click',()=> {
+    const spn =  document.createElement('span');
+    spn.innerText="Yeah its workingggg....";
+    namee.appendChild(spn);
+
+});
+
+
+ 
 const button = document.getElementById("button");
 const container = document.getElementById("container");
 
 button.addEventListener('click',()=>{
-    const el = document.createElement('span');
+    const el = document.createElement('h1');
     el.innerText = "Mayur Muddebihal";
     container.appendChild(el);
-})
+});
 
 function myFunction(){
   const cont = document.getElementById("container");
@@ -88,7 +107,32 @@ console.log(typeof fltrr);
 
 
 
+// --------------------------------------------
+console.log('Set time out....')
+console.log('1');
+setTimeout(()=> {
+    console.log('2');
+    console.log(4);
+},3000); 
+console.log('3');
 
+// --------------------------------------------
+console.log('Promises : Promises are used to specify Asynchronous operations in js ')
+
+const promise  = new Promise(function(resolve,reject){
+var condition=true;
+if(condition){
+    resolve('This is resolved');
+}else{
+    reject('This is rejected');
+}
+});
+
+promise.then((res)=>{
+    console.log(res);
+})  
+console.log(promise);
+// --------------------------------------------
 
 // document.getElementById("demo").innerHTML = person.fullname();
 </script>

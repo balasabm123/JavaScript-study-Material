@@ -40,3 +40,7 @@ VARIABLE:
 ->Map() : You can use map for (+,-,*) operation on each element of array : array.map((value) => value*2)
           -> convert array into loop also
 ->Filter() : You can use filter for (>,<,!=,=) operators. then it will filter accordingly : array.filter((value)=>value>=2)
+
+->Promises : Promises are used to specify Asynchronous operations in Java script ; Pending,Fullfiled,Rejected
+             THEN() : This method is used to specify , what to do when promises fulfilled or rejected.
+             Example : API responses
