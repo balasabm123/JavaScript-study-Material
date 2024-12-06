@@ -43,4 +43,4 @@ VARIABLE:
 
 ->Promises : Promises are used to specify Asynchronous operations in Java script ; Pending,Fullfiled,Rejected
              THEN() : This method is used to specify , what to do when promises fulfilled or rejected.
-             Example : API responses
+             Example : API responses`   
